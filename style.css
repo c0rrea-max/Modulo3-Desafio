@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #020617;
+    background-image: radial-gradient(circle at center, #1e1b4b 0%, #020617 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(250, 204, 21, 0.2);
+    text-align: center;
+    width: 380px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(to bottom, #fff, #facc15, #854d0e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+
+input { flex: 1; text-align: center; font-weight: bold; }
+.select-wrapper { flex: 2; position: relative; }
+select { width: 100%; appearance: none; }
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #facc15, #fb923c);
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);
+}
+
+#result {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(250, 204, 21, 0.2);
+    display: none;
+    animation: fadeIn 0.8s ease;
+}
+
+.knight-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #facc15;
+    object-fit: cover;
+    margin: 15px 0;
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.4);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
